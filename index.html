@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --surface:#fffdf9; --ink:#1d1b17; --muted:#6b665d;
+  --line:#e2ddd2; --accent:#9a5b3d;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161513; --surface:#1f1e1b; --ink:#f2efe8; --muted:#a09a8f;
+    --line:#332f2a; --accent:#d59a76;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161513; --surface:#1f1e1b; --ink:#f2efe8; --muted:#a09a8f;
+  --line:#332f2a; --accent:#d59a76;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:Inter,"Helvetica Neue",Arial,sans-serif; line-height:1.6;
+}
+.wrap{max-width:820px; margin:0 auto; padding:48px 20px 72px}
+header{display:flex; gap:24px; align-items:center; flex-wrap:wrap}
+.photo{
+  width:132px; height:132px; border-radius:50%; object-fit:cover;
+  border:3px solid var(--surface); box-shadow:0 4px 18px rgba(0,0,0,.12);
+  background:var(--line); flex-shrink:0;
+}
+h1{
+  font-family:Fraunces,Georgia,serif; font-weight:600; font-size:2.1rem;
+  margin:0 0 6px; letter-spacing:-.01em;
+}
+.sub{margin:0; color:var(--muted)}
+.sub strong{color:var(--ink); font-weight:500}
+h2{
+  font-family:Fraunces,Georgia,serif; font-size:1.25rem; font-weight:600;
+  margin:44px 0 14px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+.card{
+  background:var(--surface); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px;
+}
+.card h3{margin:0 0 4px; font-size:1rem; font-weight:600}
+.card p{margin:0; color:var(--muted); font-size:.92rem}
+.tag{
+  display:inline-block; margin-top:8px; font-size:.78rem; color:var(--accent);
+  border:1px solid var(--line); border-radius:999px; padding:2px 10px;
+}
+.grid{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+footer{margin-top:56px; color:var(--muted); font-size:.85rem; text-align:center}
+a{color:var(--accent)}
+img{max-width:100%}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="photo" alt="Foto profil"
+      src="data:image/svg+xml;utf8,<svg xmlns='http://250/svg' viewBox='0 0 132 132'><rect width='132' height='132' fill='%23ddd6c8'/><circle cx='66' cy='52' r='24' fill='%23b3aa99'/><path d='M18 132c0-28 22-44 48-44s48 16 48 44z' fill='%23b3aa99'/></svg>">
+    <div>
+      <h1>Noval Aulia Suryanjaya</h1>
+      <p class="sub">Siswa di <strong>SMKS ISLAM 1 KOTA BLITAR</strong> &middot; Blitar, Jawa Timur</p>
+    </div>
+  </header>
+
+  <h2>Tentang Saya</h2>
+  <p>Satu atau dua kalimat singkat tentang dirimu: minat, bidang yang sedang
+  dipelajari, dan hal yang ingin kamu kerjakan ke depan.</p>
+
+  <h2>Pendidikan</h2>
+  <div class="card">
+    <h3>SMKS ISLAM 1 KOTA BLITAR</h3>
+    <p>Jurusan / program &middot; 2025 &ndash; 2028</p>
+  </div>
+
+  <h2>Sertifikat</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Nama Sertifikat 1</h3>
+      <p>Penerbit &middot; Tahun</p>
+      <span class="tag">Kategori</span>
+    </div>
+    <div class="card">
+      <h3>Nama Sertifikat 2</h3>
+      <p>Penerbit &middot; Tahun</p>
+      <span class="tag">Kategori</span>
+    </div>
+    <div class="card">
+      <h3>Nama Sertifikat 3</h3>
+      <p>Penerbit &middot; Tahun</p>
+      <span class="tag">Kategori</span>
+    </div>
+  </div>
+
+  <h2>Kontak</h2>
+  <p>Email:novalauliasuryanjaya86 &middot; Instagram:vallcrazy_87 &middot; LinkedIn</p>
+
+  <footer>&copy; 2026 &mdash; Portofolio pribadi</footer>
+
+</div>
+</body>
+</html>
